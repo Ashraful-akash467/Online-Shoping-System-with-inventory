@@ -58,13 +58,13 @@ if(isset($_POST['order'])){
           $mail->isSMTP();
           $mail->Host       = 'smtp.gmail.com';
           $mail->SMTPAuth   = true;
-          $mail->Username   = 'ashrafulakash467@gmail.com'; // Your email
-          $mail->Password   = 'tyhzrmdzghtvaqfe'; // App password
+          $mail->Username   = 'Your email'; // Your email
+          $mail->Password   = 'Your App password'; // App password
           $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
           $mail->Port       = 465;
 
           // Recipients
-          $mail->setFrom('ashrafulakash467@gmail.com', 'EasyShop');
+          $mail->setFrom('Your email', 'EasyShop');
           $mail->addAddress($email, $name);
 
           // Content
